@@ -2,26 +2,26 @@
 var userName = prompt('Welcome! What is your name?');
 console.log('Username is ' + userName);
 
-var question1 = prompt('Alrighty ' + userName + ' what is my all time favorite food?').toLowerCase();
+var question1 = prompt('Alrighty ' + userName + ' Is my all time favorite food lasagna?').toLowerCase();
 console.log('A1 is ' + question1)
-if (question1 === 'lasagna') {
+if (question1 === 'yes' || question1 === 'y') {
   alert('You would make Garfield proud!');
 
 } else {
   alert("wow, just wow. You're dead wrong but keep going I guess.");
 }
 
-var question2 = prompt('Sweet ' + userName + ' now, who is my favorite pop star').toLowerCase();
+var question2 = prompt('Sweet ' + userName + ' Do I jam out to Katy Perry?').toLowerCase();
 console.log('A2 is ' + question2)
-if (question2 === 'katy perry') {
+if (question2 === 'yes' || question2 === 'y') {
   alert('Do you ever feel, like a plastic bag? flowing through the wind');
 } else {
   alert('It was Katy Perry... How could you not guess Katy Perry?');
 }
 
-var question3 = prompt("What's the name of my favorite pet?").toLowerCase();
+var question3 = prompt("Is my female dog\'s name Gizmo?").toLowerCase();
 console.log('A3 ' + question3)
-if (question3 === 'gizmo') {
+if (question3 === 'yes' || question3 === 'y') {
   alert('She is the greatest... Yes, she!')
 } else {
   alert('The Bio is a pretty important page...')
