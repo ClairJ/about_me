@@ -49,7 +49,7 @@ console.log('A6 ' + question6)
 if (question6 === 'no' || question6 === 'n') {
   alert('Nice, they actually terrify me.');
 } else {
-  alert('Never have and never will they terrify me');
+  alert('Never have and never will. They terrify me and you\'re starting to as well.');
 }
 
 var question7 = prompt('Am I addicted to building computers?').toLowerCase();
