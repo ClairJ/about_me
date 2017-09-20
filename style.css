@@ -1,6 +1,22 @@
 * {
   color:
 }
- * {
-   background:
+ body {
+   text-decoration-color: orange;
+   color: white;
+   margin: 250px;
+   text-align: center;
+   background-image: url('image/ezgif-4-7ef7dde080.gif');
+   background-position: center;
+   background-size: 100%;
+
  }
+title {
+  text-align: center;
+}
+img {
+  width: 20%;
+  border-radius: 50%;
+  border-width: 20px;
+  border-color: white;
+}
