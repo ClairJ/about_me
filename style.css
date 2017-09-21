@@ -1,12 +1,13 @@
 * {
-  color:
+
 }
  body {
+   overflow: scroll;
    text-decoration-color: orange;
    color: white;
-   margin: 250px;
+
    text-align: center;
-   background-image: url('image/ezgif-4-7ef7dde080.gif');
+   background-image: url('image/galaxy.gif');
    background-position: center;
    background-size: 100%;
 
@@ -19,4 +20,34 @@ img {
   border-radius: 50%;
   border-width: 20px;
   border-color: white;
+}
+.links {
+  background-size: 10%;
+  background-color: white;
+  margin-left: 38%;
+  margin-right: 38%;
+
+}
+.wording {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 1%;
+}
+.columnstuff {
+  column-count: 2;
+
+}
+.leftbio {
+  column-count: 1;
+  padding: 10%
+
+}
+.rightbio {
+  column-count: 1;
+  padding-bottom: 50%;
+  width: 50%;
+  padding-left: 20%;
+}
+ul {
+  font-size: 50%;
 }
