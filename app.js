@@ -3,66 +3,80 @@ var userName = prompt('Welcome! What is your name?');
 console.log('Username is ' + userName);
 
 var score = 0;
+var questions = ['Alrighty ' + userName + ' Is my all time favorite food lasagna?','Sweet ' + userName + ' Do I jam out to Katy Perry?',"Is my female dog\'s name Gizmo?",'Rick and Morty?','Do I enjoy long hikes on the horizon?']
+
+var correct = ['You would make Garfield proud!','Do you ever feel, like a plastic bag? flowing through the wind','She is the greatest... Yes, she!','Wubalubadubdub',"You know me to well and it's starting to get weird"]
+
+var incorrect = ["wow, just wow. You're dead wrong but keep going I guess.",'It was Katy Perry... How could you not guess Katy Perry?','The Bio is a pretty important page...',"Start today, you're missing out",'Hiking is the last thing I would ever do, even if theres a fire!']
+
+var x = 0;
 
 function questionOne () {
   console.log('score is ' + score)
-  var question1 = prompt('Alrighty ' + userName + ' Is my all time favorite food lasagna?').toLowerCase();
+  var question1 = prompt(questions[x]).toLowerCase();
   console.log('A1 is ' + question1)
   if (question1 === 'yes' || question1 === 'y') {
-    alert('You would make Garfield proud!');
+    alert(correct[x]);
     score ++;
     console.log('score is ' + score)
   } else {
-    alert("wow, just wow. You're dead wrong but keep going I guess.");
+    alert(incorrect[x]);
   }
+  x++;
+  console.log('value of x is ' + x)
 }
 
 function questionTwo (){
-  var question2 = prompt('Sweet ' + userName + ' Do I jam out to Katy Perry?').toLowerCase();
+  var question2 = prompt(questions[x]).toLowerCase();
   console.log('A2 is ' + question2)
   if (question2 === 'yes' || question2 === 'y') {
-    alert('Do you ever feel, like a plastic bag? flowing through the wind');
+    alert(correct[x]);
     score ++;
     console.log('score is ' + score)
   } else {
-    alert('It was Katy Perry... How could you not guess Katy Perry?');
+    alert(incorrect[x]);
   }
+  x++;
 }
 
+
 function questionThree () {
-  var question3 = prompt("Is my female dog\'s name Gizmo?").toLowerCase();
+  var question3 = prompt(questions[x]).toLowerCase();
   console.log('A3 ' + question3)
   if (question3 === 'yes' || question3 === 'y') {
-    alert('She is the greatest... Yes, she!')
+    alert(correct[x])
     score ++;
     console.log('score is ' + score)
   } else {
-    alert('The Bio is a pretty important page...')
+    alert(incorrect[x])
   }
+  x++;
 }
 
 function questionFour () {
-  var question4 = prompt('Rick and Morty?').toLowerCase();
+  var question4 = prompt(questions[x]).toLowerCase();
   console.log('A4 ' + question4)
   if (question4 === 'yes' || question4 === 'y') {
-    alert('Wubalubadubdub');
+    alert(correct[x]);
     score ++;
     console.log('score is ' + score)
   } else {
-    alert("Start today, you're missing out");
+    alert(incorrect[x]);
   }
+  x++;
 }
 
 function questionFive () {
-  var question5 = prompt('Do I enjoy long hikes on the horizon?').toLowerCase();
+  var question5 = prompt(questions[x]).toLowerCase();
   console.log('A5 ' + question5)
   if (question5 === 'no' || question5 === 'n') {
-    alert("You know me to well and it's starting to get weird");
+    alert(correct[x]);
     score ++;
     console.log('score is ' + score)
   } else {
-    alert('Hiking is the last thing I would ever do, even if theres a fire!');
+    alert(icorrect[x]);
   }
+  x++;
 }
 
 function questionSix () {
