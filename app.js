@@ -15,8 +15,9 @@ function questionOne () {
   } else {
     alert("wow, just wow. You're dead wrong but keep going I guess.");
   }
+}
 
-
+function questionTwo (){
   var question2 = prompt('Sweet ' + userName + ' Do I jam out to Katy Perry?').toLowerCase();
   console.log('A2 is ' + question2)
   if (question2 === 'yes' || question2 === 'y') {
@@ -26,7 +27,9 @@ function questionOne () {
   } else {
     alert('It was Katy Perry... How could you not guess Katy Perry?');
   }
+}
 
+function questionThree () {
   var question3 = prompt("Is my female dog\'s name Gizmo?").toLowerCase();
   console.log('A3 ' + question3)
   if (question3 === 'yes' || question3 === 'y') {
@@ -36,7 +39,9 @@ function questionOne () {
   } else {
     alert('The Bio is a pretty important page...')
   }
+}
 
+function questionFour () {
   var question4 = prompt('Rick and Morty?').toLowerCase();
   console.log('A4 ' + question4)
   if (question4 === 'yes' || question4 === 'y') {
@@ -46,7 +51,9 @@ function questionOne () {
   } else {
     alert("Start today, you're missing out");
   }
+}
 
+function questionFive () {
   var question5 = prompt('Do I enjoy long hikes on the horizon?').toLowerCase();
   console.log('A5 ' + question5)
   if (question5 === 'no' || question5 === 'n') {
@@ -56,8 +63,9 @@ function questionOne () {
   } else {
     alert('Hiking is the last thing I would ever do, even if theres a fire!');
   }
+}
 
-
+function questionSix () {
   var age = '21';
   for (var i = 0; i <= 4; i++) {
     var age = '21';
@@ -76,11 +84,12 @@ function questionOne () {
       alert('What? no. that\s not even a number!')
     }
   }
+}
 
 
   //WIP
 
-
+function questionSeven () {
   var guesses = 6
   var country = ['japan', 'usa', 'mexico', 'canada'];
   while(guesses > 0) {
@@ -105,10 +114,15 @@ function questionOne () {
     }
 
   }
-
 }
 
 questionOne ();
+questionTwo ();
+questionThree ();
+questionFour ();
+questionFive ();
+questionSix ();
+questionSeven ();
 
 alert('You got ' + score + ' out of 7!!!!!');
 //Too many yes no questions
