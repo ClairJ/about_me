@@ -2,7 +2,7 @@
 
 var userName = prompt('Welcome! What is your name?');
 console.log('Username is ' + userName);
-
+alert('Please answer in true or false.')
 var score = 0;
 var questions = ['Alrighty ' + userName + ' Is my all time favorite food lasagna?','Sweet ' + userName + ' Do I jam out to Katy Perry?',"Is my female dog\'s name Gizmo?",'Rick and Morty?','Do I enjoy long hikes on the horizon?']
 
@@ -13,6 +13,7 @@ var incorrect = ["wow, just wow. You're dead wrong but keep going I guess.",'It 
 var answers = ['true','true','true','true','false']
 
 var x = 0;
+
 
 function functionTest () {
   for (var i = 0; i < questions.length; i++) {
@@ -33,137 +34,131 @@ function functionTest () {
 
 functionTest();
 
+
+/*
+function questionOne () {
+  console.log('score is ' + score)
+  var question1 = prompt(questions[x]).toLowerCase();
+  console.log('A1 is ' + question1)
+  if (question1 === 'yes' || question1 === 'y') {
+    alert(correct[x]);
+    score ++;
+    console.log('score is ' + score)
+  } else {
+    alert(incorrect[x]);
+  }
+  x++;
+  console.log('value of x is ' + x)
+}
+
+function questionTwo (){
+  var question2 = prompt(questions[x]).toLowerCase();
+  console.log('A2 is ' + question2)
+  if (question2 === 'yes' || question2 === 'y') {
+    alert(correct[x]);
+    score ++;
+    console.log('score is ' + score)
+  } else {
+    alert(incorrect[x]);
+  }
+  x++;
+}
+
+
+function questionThree () {
+  var question3 = prompt(questions[x]).toLowerCase();
+  console.log('A3 ' + question3)
+  if (question3 === 'yes' || question3 === 'y') {
+    alert(correct[x])
+    score ++;
+    console.log('score is ' + score)
+  } else {
+    alert(incorrect[x])
+  }
+  x++;
+}
+
+function questionFour () {
+  var question4 = prompt(questions[x]).toLowerCase();
+  console.log('A4 ' + question4)
+  if (question4 === 'yes' || question4 === 'y') {
+    alert(correct[x]);
+    score ++;
+    console.log('score is ' + score)
+  } else {
+    alert(incorrect[x]);
+  }
+  x++;
+}
+
+function questionFive () {
+  var question5 = prompt(questions[x]).toLowerCase();
+  console.log('A5 ' + question5)
+  if (question5 === 'no' || question5 === 'n') {
+    alert(correct[x]);
+    score ++;
+    console.log('score is ' + score)
+  } else {
+    alert(icorrect[x]);
+  }
+  x++;
+}
+*/
+function questionSix () {
+  var age = '21';
+  for (var i = 0; i <= 4; i++) {
+    var age = '21';
+    var question6 = prompt('How old am I?').toLowerCase();
+    console.log('A6 ' + question6);
+    if(question6 === age || question6 === 'twentyone') {
+      alert('Yes, BUT I still have a lot of maturing to do.');
+      i+=4;
+      score++;
+      console.log('score is ' + score)
+    } else if (question6 < '21'){
+      alert('ouch a little higher');
+    } else if (question6 > '21'){
+      alert('bring it back down to the 20 range');
+    } else {
+      alert('What? no. that\s not even a number!')
+    }
+  }
+}
+
+
+  //WIP
+
+function questionSeven () {
+  var guesses = 6
+  var country = ['japan', 'usa', 'mexico', 'canada'];
+  while(guesses > 0) {
+    var question7 = prompt('Guess a country I have been to').toLowerCase();
+    console.log('A7 ' + question7);
+    guesses --;
+    for (var i = 0; i < country.length; i++) {
+      console.log(country);
+      if (question7 === country[i]) {
+        alert('Sweet! I\'ve been to Japan, Canada, USA, and Mexico.');
+        guesses= -1;
+        score++;
+        console.log('score is ' + score)
+        break;
+      }
+    }
+    if (guesses > 0) {
+      alert('Nope that is not a correct answer you have ' + guesses + ' guesses remaining')
+    }
+    if (guesses === 0) {
+      alert('Sorry, you are out of guesses. My previous countries are Japan, Canada, USA, and Mexico')
+    }
+
+  }
+}
+questionSix();
+questionSeven();
 alert('You got ' + score + ' out of 7!!!!!');
 
-// function questionOne () {
-//   console.log('score is ' + score)
-//   var question1 = prompt(questions[x]).toLowerCase();
-//   console.log('A1 is ' + question1)
-//   if (question1 === 'yes' || question1 === 'y') {
-//     alert(correct[x]);
-//     score ++;
-//     console.log('score is ' + score)
-//   } else {
-//     alert(incorrect[x]);
-//   }
-//   x++;
-//   console.log('value of x is ' + x)
-// }
-//
-// function questionTwo (){
-//   var question2 = prompt(questions[x]).toLowerCase();
-//   console.log('A2 is ' + question2)
-//   if (question2 === 'yes' || question2 === 'y') {
-//     alert(correct[x]);
-//     score ++;
-//     console.log('score is ' + score)
-//   } else {
-//     alert(incorrect[x]);
-//   }
-//   x++;
-// }
-//
-//
-// function questionThree () {
-//   var question3 = prompt(questions[x]).toLowerCase();
-//   console.log('A3 ' + question3)
-//   if (question3 === 'yes' || question3 === 'y') {
-//     alert(correct[x])
-//     score ++;
-//     console.log('score is ' + score)
-//   } else {
-//     alert(incorrect[x])
-//   }
-//   x++;
-// }
-//
-// function questionFour () {
-//   var question4 = prompt(questions[x]).toLowerCase();
-//   console.log('A4 ' + question4)
-//   if (question4 === 'yes' || question4 === 'y') {
-//     alert(correct[x]);
-//     score ++;
-//     console.log('score is ' + score)
-//   } else {
-//     alert(incorrect[x]);
-//   }
-//   x++;
-// }
-//
-// function questionFive () {
-//   var question5 = prompt(questions[x]).toLowerCase();
-//   console.log('A5 ' + question5)
-//   if (question5 === 'no' || question5 === 'n') {
-//     alert(correct[x]);
-//     score ++;
-//     console.log('score is ' + score)
-//   } else {
-//     alert(icorrect[x]);
-//   }
-//   x++;
-// }
-//
-// function questionSix () {
-//   var age = '21';
-//   for (var i = 0; i <= 4; i++) {
-//     var age = '21';
-//     var question6 = prompt('How old am I?').toLowerCase();
-//     console.log('A6 ' + question6);
-//     if(question6 === age || question6 === 'twentyone') {
-//       alert('Yes, BUT I still have a lot of maturing to do.');
-//       i+=4;
-//       score++;
-//       console.log('score is ' + score)
-//     } else if (question6 < '21'){
-//       alert('ouch a little higher');
-//     } else if (question6 > '21'){
-//       alert('bring it back down to the 20 range');
-//     } else {
-//       alert('What? no. that\s not even a number!')
-//     }
-//   }
-// }
-//
-//
-//   //WIP
-//
-// function questionSeven () {
-//   var guesses = 6
-//   var country = ['japan', 'usa', 'mexico', 'canada'];
-//   while(guesses > 0) {
-//     var question7 = prompt('Guess a country I have been to').toLowerCase();
-//     console.log('A7 ' + question7);
-//     guesses --;
-//     for (var i = 0; i < country.length; i++) {
-//       console.log(country);
-//       if (question7 === country[i]) {
-//         alert('Sweet! I\'ve been to Japan, Canada, USA, and Mexico.');
-//         guesses= -1;
-//         score++;
-//         console.log('score is ' + score)
-//         break;
-//       }
-//     }
-//     if (guesses > 0) {
-//       alert('Nope that is not a correct answer you have ' + guesses + ' guesses remaining')
-//     }
-//     if (guesses === 0) {
-//       alert('Sorry, you are out of guesses. My previous countries are Japan, Canada, USA, and Mexico')
-//     }
-//
-//   }
-// }
-//
-// questionOne ();
-// questionTwo ();
-// questionThree ();
-// questionFour ();
-// questionFive ();
-// questionSix ();
-// questionSeven ();
-//
-//Too many yes no questions
-
+// too many questions
 /*
 var question7 = prompt('Have I ever seen a camel?').toLowerCase();
 console.log('A7 ' + question7)
