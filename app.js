@@ -61,7 +61,7 @@ for (var i = 0; i <= 4; i++) {
   var age = '21';
   var question6 = prompt('How old am I?').toLowerCase();
   console.log('A6 ' + question6);
-  if(question6 === age) {
+  if(question6 === age || question6 === 'twentyone') {
     alert('Yes, BUT I still have a lot of maturing to do.');
     i+=4;
     score++;
@@ -70,28 +70,39 @@ for (var i = 0; i <= 4; i++) {
     alert('ouch a little higher');
   } else if (question6 > '21'){
     alert('bring it back down to the 20 range');
+  } else {
+    alert('What? no. that\s not even a number!')
   }
 }
 
 
+//WIP
 
 
+var guesses = 6
 var country = ['japan', 'usa', 'mexico', 'canada'];
-for (var i = 0; i < 7; i++) {
-  console.log(country);
+while(guesses > 0) {
   var question7 = prompt('Guess a country I have been to').toLowerCase();
   console.log('A7 ' + question7);
+  guesses --;
+  for (var i = 0; i < country.length; i++) {
+    console.log(country);
+      if (question7 === country[i]) {
+          alert('Sweet! I\'ve been to Japan, Canada, USA, and Mexico.');
+          guesses= -1;
+          score++;
+          console.log('score is ' + score)
+          break;
+        }
+      }
+      if (guesses > 0) {
+        alert('Nope that is not a correct answer you have ' + guesses + ' guesses remaining')
+      }
+      if (guesses === 0) {
+        alert('Sorry, you are out of guesses. My previous countries are Japan, Canada, USA, and Mexico')
+      }
 
-  if (question7 === country[0] || question7 === country[1] || question7 === country[2] || question7 === country[3]) {
-      alert('Sweet! I\'ve been to Japan, Canada, USA, and Mexico.');
-      i+=7;
-      score++;
-      console.log('score is ' + score)
-  } else {
-      alert('nope');
-
-  }
-}
+    }
 
 alert('You got ' + score + ' out of 7!!!!!');
 //Too many yes no questions
