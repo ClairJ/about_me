@@ -4,30 +4,30 @@ var userName = prompt('Welcome! What is your name?');
 console.log('Username is ' + userName);
 
 var score = 0;
-var questions = ['Alrighty ' + userName + ' Is my all time favorite food lasagna?','Sweet ' + userName + ' Do I jam out to Katy Perry?',"Is my female dog\'s name Gizmo?",'Rick and Morty?','Do I enjoy long hikes on the horizon?']
+var questions = ['Alrighty ' + userName + ' Is my all time favorite food lasagna?','Sweet ' + userName + ' Do I jam out to Katy Perry?','Is my female dog\'s name Gizmo?','Rick and Morty?','Do I enjoy long hikes on the horizon?'];
 
-var correct = ['You would make Garfield proud!','Do you ever feel, like a plastic bag? flowing through the wind','She is the greatest... Yes, she!','Wubalubadubdub',"You know me to well and it's starting to get weird"]
+var correct = ['You would make Garfield proud!','Do you ever feel, like a plastic bag? flowing through the wind','She is the greatest... Yes, she!','Wubalubadubdub','You know me to well and it\'s starting to get weird'];
 
-var incorrect = ["wow, just wow. You're dead wrong but keep going I guess.",'It was Katy Perry... How could you not guess Katy Perry?','The Bio is a pretty important page...',"Start today, you're missing out",'Hiking is the last thing I would ever do, even if theres a fire!']
+var incorrect = ['wow, just wow. You\'re dead wrong but keep going I guess.','It was Katy Perry... How could you not guess Katy Perry?','The Bio is a pretty important page...','Start today, you\'re missing out','Hiking is the last thing I would ever do, even if theres a fire!'];
 
-var answers = ['true','true','true','true','false']
+var answers = ['true','true','true','true','false'];
 
 var x = 0;
 
 function functionTest () {
-  for (var i = 0; i < questions.length; i++) {
-    console.log('score is ' + score)
+  for (var i = 0; i < questions.length; i++); {
+    console.log('score is ' + score);
     var question1 = prompt(questions[x]).toLowerCase();
-    console.log('A1 is ' + question1)
+    console.log('A1 is ' + question1);
     if (question1 === answers[x]) {
       alert(correct[x]);
       score ++;
-      console.log('score is ' + score)
+      console.log('score is ' + score);
     } else {
       alert(incorrect[x]);
     }
     x++;
-    console.log('value of x is ' + x)
+    console.log('value of x is ' + x);
   }
 }
 
