@@ -14,7 +14,8 @@ var answers = ['true','true','true','true','false']
 
 var x = 0;
 
-
+/*var rano = Math.floor((Math.random() * 256) + 1)
+console.log('random number ' + rano);*/
 function functionTest () {
   for (var i = 0; i < questions.length; i++) {
     console.log('score is ' + score)
